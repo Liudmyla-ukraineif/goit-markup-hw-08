@@ -1,0 +1,42 @@
+/*колір палитры
+ --текст лого Raleway
+ --текст основний Roboto
+ --колір лого #2196f3
+ --колір частини лого хедер #000000
+ --колір частини лого footer #ffffff
+ --колыр іконок #AFB1B8;
+ --колір фону іконок в футері rgba(255, 255, 255, 0.1);
+ --колір основний тексту #757575
+ --колір навигації заголовку #212121
+ --колір акценту синій #2196F3
+ --білий #FFFFFF;
+ --колір посилань в footer rgba(255, 255, 255, 0.6)
+-- колір bgd header #ffffff
+-- колір bgd первинний #ffffff 
+-- колір bgd вторинний #F5F4FA
+-- колір bgd hero, footer #2F303A 
+-- колір bgd активної кнопки #188CE8; */
+
+:root {
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+
+  --logo-primary-text: #2196f3;
+  --logo-header-text: #000000;
+  --logo-footer-text: #ffffff;
+
+  --icon-color: #afb1b8;
+  --bgd-color-icon-footer: rgba(255, 255, 255, 0.1);
+
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text: #2196f3;
+  --text-color-footer: rgba(255, 255, 255, 0.6);
+
+  --white-color: #ffffff;
+
+  --bgd-primary: #ffffff;
+  --bgd-secondary: #f5f4fa;
+  --bgd-hero: #2f303a;
+  --bgd-btn-active: #188ce8;
+}

@@ -1,0 +1,44 @@
+/*style logo header and footer*/
+.logo {
+  @extend %link;
+
+  display: inline-block;
+
+  font-family: var(--secondary-font-family);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: var(--logo-primary-text);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  &--header {  
+    color: var(--logo-header-text);
+
+    @media screen and (min-width: 480px) {
+      margin-right: 276px;
+    }
+    
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+  }
+
+  &--footer {
+    color: var(--logo-footer-text);
+  }
+
+  // .nav > & {
+  //   padding-top: 24px;
+  //   padding-bottom: 25px;
+  // }
+}

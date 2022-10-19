@@ -1,0 +1,131 @@
+%link {
+  text-decoration: none;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  // min-width: 320px;
+  
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+%section--centered {
+  @extend %section;
+  text-align: center;
+}
+
+%container__caption {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+%card-social {
+  @extend %list;
+  display: flex;
+}
+
+%card-social__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+%card-social__link {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: var(--accent-text);
+  }
+}
+
+%card-social__icon {
+  fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-card__list:hover &,
+  .social-card__list:focus & {
+    fill: var(--logo-footer-text);
+  }
+}
+
+%footer-title {
+  display: block;
+  margin-top: 60px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--logo-footer-text);
+  
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+}
+
+%form-check__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 7px;
+
+  fill: var(--title-text-color);
+}

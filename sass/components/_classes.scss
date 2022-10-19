@@ -1,0 +1,42 @@
+/* style classes */
+.classes {
+  @extend %section--centered;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.classes__caption {
+  @extend %container__caption;
+}
+
+.classes__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes__item {
+  .classes__list > & {
+    position: relative;
+  }
+}
+
+.classes__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  line-height: 1.14;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--logo-footer-text);
+  text-transform: uppercase;
+}
