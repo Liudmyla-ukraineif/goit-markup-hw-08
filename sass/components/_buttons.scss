@@ -34,8 +34,15 @@
 .painting__list {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+  
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
 }
 
 .painting__item + .painting__item {
@@ -47,6 +54,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
+  min-width: 73px;
 
   font-family: inherit;
   font-weight: 500;

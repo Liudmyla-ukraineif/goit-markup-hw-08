@@ -1,8 +1,9 @@
 /* style classes */
 .classes {
   @extend %section--centered;
+  padding-top: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -15,6 +16,7 @@
   @extend %list;
   display: flex;
   justify-content: space-between;
+
 }
 
 .classes__item {

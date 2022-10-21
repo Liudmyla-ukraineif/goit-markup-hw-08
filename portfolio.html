@@ -19,37 +19,78 @@
 <body>
     <!--шапка сайту-->
     <header class="header">
-        <div class="header-page container">
-            <nav class="header-page__nav">
+        <div class="header-page">
+            <nav class="header-page__nav-mob">
                 <a href="./index.html" class="logo" lang="en">
                     Web<span class="logo--header">Studio</span>
                 </a>
+                
+                <button type="button" class="menu-button js-open-menu" data-menu-button aria-expanded="false" aria-controls="menu-container">
+                    <svg class="menu-button__svg" aria-label="Вимикач мобільного меню" width="40" height="40"> 
+                        <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+                    </svg>
+                </button>
+            </nav>
+            <div class="menu-container" id="menu-container" data-menu>
+                <button type="button" class="menu__cross js-close-menu" data-menu-button>
+                    <svg class="menu__cross-icon" width="40" height="40"><use href="./images/icons.svg#cross"></svg>
+                </button>
+                <ul class="mob-nav">
+                    <li class="mob-nav__item">
+                        <a href="./index.html" class="mob-nav__subtitle">Студія</a>    
+                    </li>
+                    <li class="mob-nav__item">
+                        <a href="./portfolio.html" class="mob-nav__subtitle corrent">Портфоліо</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a href="" class="mob-nav__subtitle">Контакти</a>
+                    </li>
+                </ul>
+
+                <ul class="mob-nav__auth">
+                    <li class="mob-nav__auth-item">
+                        <a href="tel:+380961111111" class="mob-nav--tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-nav__auth-item">
+                        <a href="mailto:info@devstudio.com" class="mob-nav--email">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-nav--social">
+                    <li class="link-social">Instagram</li>
+                    <li class="link-social">Twitter</li>
+                    <li class="link-social">Facebook</li>
+                    <li class="link-social">LinkedIn
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-tablet">
                 <ul class="header-page__site-nav">
-                    <li class="header-page__item">
+                    <li class="header-page__item--nav">
                         <a href="./index.html" class="header-page__subtitle">Студія</a>    
                     </li>
-                    <li class="header-page__item">
+                    <li class="header-page__item--nav">
                         <a href="./portfolio.html" class="header-page__subtitle corrent">Портфоліо</a>
                     </li>
-                    <li class="header-page__item">
+                    <li class="header-page__item--nav">
                         <a href="" class="header-page__subtitle">Контакти</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="header-page__auth-nav">
-                <li class="header-page__item">
-                    <a href="mailto:info@devstudio.com" class="header-page__auth-item">
-                        <svg class="header-page__auth-icon" width="16" height="12"> 
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="header-page__item">
-                    <a href="tel:+380961111111" class="header-page__auth-item"><svg class="header-page__auth-icon" width="10" height="16"> 
-                        <use href="./images/icons.svg#smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="header-page__auth-nav">
+                    <li class="header-page__item--auth">
+                        <a href="mailto:info@devstudio.com" class="header-page__auth-item">
+                            <svg class="header-page__auth-icon" width="16" height="12"> <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="header-page__item--auth">
+                        <a href="tel:+380961111111" class="header-page__auth-item"><svg class="header-page__auth-icon" width="10" height="16"> <use href="./images/icons.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+ 
         </div>
     </header>
 
@@ -81,7 +122,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-tehnokriak.jpg" alt="сайт Технокряк" width="370">
+                                <img src="./images/img-portfolio/img-tehnokriak.jpg" alt="сайт Технокряк" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="work-list__block">
@@ -94,7 +135,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-1.jpg" alt="постер" width="370">
+                                <img src="./images/img-portfolio/img-1.jpg" alt="постер" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -107,7 +148,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-2.jpg" alt="додаток для ресторану" width="370">
+                                <img src="./images/img-portfolio/img-2.jpg" alt="додаток для ресторану" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -120,7 +161,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-3.jpg" alt="маркетинг для проєкту" width="370">
+                                <img src="./images/img-portfolio/img-3.jpg" alt="маркетинг для проєкту" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -133,7 +174,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-4.jpg" alt="додаток для проєкту" width="370">
+                                <img src="./images/img-portfolio/img-4.jpg" alt="додаток для проєкту" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -146,7 +187,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-5.jpg" alt="сайт" width="370">
+                                <img src="./images/img-portfolio/img-5.jpg" alt="сайт" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -159,7 +200,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-6.jpg" alt="дизайн для видання" width="370">
+                                <img src="./images/img-portfolio/img-6.jpg" alt="дизайн для видання" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -172,7 +213,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-7.jpg" alt="маркетинг для проєкту LAB" width="370">
+                                <img src="./images/img-portfolio/img-7.jpg" alt="маркетинг для проєкту LAB" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>                            
                             <div class="work-list__block">
@@ -185,7 +226,7 @@
                     <li class="work-list__item">
                         <a href="" class="work-list__card">
                             <div class="work-list__details">
-                                <img src="./images/img-portfolio/img-8.jpg" alt="додаток для Growing Business" width="370">
+                                <img src="./images/img-portfolio/img-8.jpg" alt="додаток для Growing Business" class="work-list__image">
                                 <p class="work-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="work-list__block">
@@ -202,69 +243,71 @@
 <!-- section footer -->
     <footer class="footer">
         <div class="container cont-footer">
-            <div class="block-address">
-                <a href="./index.html" class="logo" lang="en">
-                    Web<span class="logo--footer">Studio</span>
-                </a>
-                <address class="address">
-                    <ul class="address__nav">
-                        <li class="address__item">
-                            <a href="https://goo.gl/maps/ciSxTHAbRMph5zd46" target="_blank"
-                                rel="noopener nofollow noreferrer" class="address__footer">м. Київ, пр-т Лесі
-                                Українки, 26</a>
+            <div class="cont-footer--tablet">
+                <div class="block-address">
+                    <a href="./index.html" class="logo" lang="en">
+                        Web<span class="logo--footer">Studio</span>
+                    </a>
+                    <address class="address">
+                        <ul class="address__nav">
+                            <li class="address__item">
+                                <a href="https://goo.gl/maps/ciSxTHAbRMph5zd46" target="_blank"
+                                    rel="noopener nofollow noreferrer" class="address__footer">м. Київ, пр-т Лесі
+                                    Українки, 26</a>
+                            </li>
+                            <li class="address__item">
+                                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="block-social">
+                    <b class="block-social__title">Приєднуйтесь</b>
+                    <ul class="block-social__list">
+                        <li class="block-social__item">
+                            <a href="" class="block-social__link">
+                                <svg class="block-social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#instagram">
+                                    </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                        <li class="block-social__item">
+                            <a href="" class="block-social__link">
+                                <svg class="block-social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#twitter">
+                                    </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                        <li class="block-social__item">
+                            <a href="" class="block-social__link">
+                                <svg class="block-social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#facebook">
+                                    </svg>
+                            </a>
+                        </li>
+                        <li class="block-social__item">
+                            <a href="" class="block-social__link">
+                                <svg class="block-social__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin">
+                                    </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="block-social">
-                <b class="block-social__title">Приєднуйтесь</b>
-                <ul class="block-social__list">
-                    <li class="block-social__item">
-                        <a href="" class="block-social__link">
-                            <svg class="block-social__icon">
-                                <use href="./images/icons.svg#instagram">
-                                </svg>
-                        </a>
-                    </li>
-                    <li class="block-social__item">
-                        <a href="" class="block-social__link">
-                            <svg class="block-social__icon">
-                                <use href="./images/icons.svg#twitter">
-                                </svg>
-                        </a>
-                    </li>
-                    <li class="block-social__item">
-                        <a href="" class="block-social__link">
-                            <svg class="block-social__icon">
-                                <use href="./images/icons.svg#facebook">
-                                </svg>
-                        </a>
-                    </li>
-                    <li class="block-social__item">
-                        <a href="" class="block-social__link">
-                            <svg class="block-social__icon">
-                                <use href="./images/icons.svg#linkedin">
-                                </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
 
             <div class="join">
-                <b class="join-title">Підпишіться на розсилку</b>
+                <b class="join__title">Підпишіться на розсилку</b>
 
-                <form action="" class="form-join">
-                    <label class="join-label">
-                        <input type="email" name="join-email" class="join-input" placeholder="E-mail">
+                <form action="" class="join__form">
+                    <label class="join__label">
+                        <input type="email" name="join-email" class="join__input" placeholder="E-mail">
                     </label>
                     
-                    <button type="submit" class="join-telegram">
+                    <button type="submit" class="join__telegram">
                         Підписатися
                         <svg width="24" height="24"><use href="./images/icons.svg#telegram"></use></svg>
                     </button>
@@ -273,7 +316,9 @@
         </div>
 
     </footer>
-
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
