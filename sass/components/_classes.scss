@@ -16,10 +16,15 @@
   @extend %list;
   display: flex;
   justify-content: space-between;
-
 }
 
 .classes__item {
+  width: calc((100% - 2 * 30px) / 3);
+
+  & + & {
+    margin-left: 30px;
+  }
+
   .classes__list > & {
     position: relative;
   }

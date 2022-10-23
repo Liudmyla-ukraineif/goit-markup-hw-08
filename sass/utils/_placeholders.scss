@@ -13,7 +13,6 @@
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  // min-width: 320px;
   
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -102,6 +101,7 @@
 
 %footer-title {
   display: block;
+  margin: 0 0 20px 0;
 
   font-weight: 700;
   font-size: 14px;
@@ -112,14 +112,12 @@
   color: var(--logo-footer-text);
   
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    margin: 0 0 20px 0;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: auto;
-    padding-top: 12px;
+    margin: 0 auto 20px 0;
+
   }
 }
 

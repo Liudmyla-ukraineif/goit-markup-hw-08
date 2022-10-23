@@ -43,6 +43,11 @@
     margin: 0;
     width: 450px; 
   }
+
+  @media screen and (min-width: 468px) {
+    width: 528px;
+    padding: 40px;
+  }
 }
 
 .modal__close {
