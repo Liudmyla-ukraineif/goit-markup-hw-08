@@ -887,6 +887,12 @@ img {
 /*style team*/
 .team {
   background-color: var(--bgd-secondary);
+  padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0 94px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {

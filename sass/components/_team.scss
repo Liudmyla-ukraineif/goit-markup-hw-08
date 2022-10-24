@@ -2,6 +2,11 @@
 .team {
   @extend %section--centered;
   background-color: var(--bgd-secondary);
+  padding: 60px 0 60px 0;
+
+  @media screen and (min-width: 1200px){
+    padding: 94px 0 94px 0;
+  }
 }
 
 .team__caption {
