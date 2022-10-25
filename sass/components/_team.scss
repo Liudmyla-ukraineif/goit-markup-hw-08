@@ -1,11 +1,11 @@
 /*style team*/
 .team {
-  @extend %%section--centered;
+  @extend %section--centered;
   background-color: var(--bgd-secondary);
 }
 
 .team__caption {
-  @extend %container__caption;
+  @extend %container-title;
   
 }
 
@@ -25,7 +25,9 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (max-width: 767px){
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px){
