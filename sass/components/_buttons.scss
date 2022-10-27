@@ -1,6 +1,7 @@
 /* style button */
 .button {
   display: inline-block;
+  justify-content: space-evenly;
   padding: 10px 24px;
   min-width: 216px;
   border: 1px solid transparent;
@@ -35,19 +36,15 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 60px;
   
   @media screen and (min-width: 768px) {
     justify-content: center;
-    gap: 8px;
     margin-bottom: 50px;
   }
 }
 
-.painting__item + .painting__item {
-  margin-left: 8px;
-}
 
 .painting__button {
   padding: 6px 22px;

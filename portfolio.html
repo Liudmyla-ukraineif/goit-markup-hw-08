@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML_CSS Lesson 7</title>
+    <title>HTML_CSS Lesson 8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,50 +20,15 @@
     <!--шапка сайту-->
     <header class="header">
         <div class="header-page">
-            <nav class="header-page__nav-mob">
-                <a href="./index.html" class="logo" lang="en">
-                    Web<span class="logo--header">Studio</span>
-                </a>
-                
-                <button type="button" class="menu-button js-open-menu" data-menu-button aria-expanded="false" aria-controls="menu-container">
-                    <svg class="menu-button__svg" aria-label="Вимикач мобільного меню" width="40" height="40"> 
-                        <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-                    </svg>
-                </button>
-            </nav>
-            <div class="menu-container" id="menu-container" data-menu>
-                <button type="button" class="menu__cross js-close-menu" data-menu-button>
-                    <svg class="menu__cross-icon" width="40" height="40"><use href="./images/icons.svg#cross"></svg>
-                </button>
-                <ul class="mob-nav">
-                    <li class="mob-nav__item">
-                        <a href="./index.html" class="mob-nav__subtitle">Студія</a>    
-                    </li>
-                    <li class="mob-nav__item">
-                        <a href="./portfolio.html" class="mob-nav__subtitle corrent">Портфоліо</a>
-                    </li>
-                    <li class="mob-nav__item">
-                        <a href="" class="mob-nav__subtitle">Контакти</a>
-                    </li>
-                </ul>
-
-                <ul class="mob-nav__auth">
-                    <li class="mob-nav__auth-item">
-                        <a href="tel:+380961111111" class="mob-nav--tel">+38 096 111 11 11</a>
-                    </li>
-                    <li class="mob-nav__auth-item">
-                        <a href="mailto:info@devstudio.com" class="mob-nav--email">info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mob-nav--social">
-                    <li class="link-social">Instagram</li>
-                    <li class="link-social">Twitter</li>
-                    <li class="link-social">Facebook</li>
-                    <li class="link-social">LinkedIn
-
-                    </li>
-                </ul>
-            </div>
+            <a href="./index.html" class="logo" lang="en">
+                Web<span class="logo--header">Studio</span>
+            </a>
+            
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-button__svg" aria-label="Вимикач мобільного меню" width="40" height="40"> 
+                    <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>            
 
             <div class="menu-tablet">
                 <ul class="header-page__site-nav">
@@ -90,7 +55,7 @@
                     </li>
                 </ul>
             </div>
- 
+
         </div>
     </header>
 
@@ -270,29 +235,25 @@
                         <li class="block-social__item">
                             <a href="" class="block-social__link">
                                 <svg class="block-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#instagram">
-                                    </svg>
+                                    <use href="./images/icons.svg#instagram"></use></svg>
                             </a>
                         </li>
                         <li class="block-social__item">
                             <a href="" class="block-social__link">
                                 <svg class="block-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#twitter">
-                                    </svg>
+                                    <use href="./images/icons.svg#twitter"></use></svg>
                             </a>
                         </li>
                         <li class="block-social__item">
                             <a href="" class="block-social__link">
                                 <svg class="block-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#facebook">
-                                    </svg>
+                                    <use href="./images/icons.svg#facebook"></use></svg>
                             </a>
                         </li>
                         <li class="block-social__item">
                             <a href="" class="block-social__link">
                                 <svg class="block-social__icon" width="20" height="20">
-                                    <use href="./images/icons.svg#linkedin">
-                                    </svg>
+                                    <use href="./images/icons.svg#linkedin"></use></svg>
                             </a>
                         </li>
                     </ul>
@@ -302,7 +263,7 @@
             <div class="join">
                 <b class="join__title">Підпишіться на розсилку</b>
 
-                <form action="" class="join__form">
+                <form action="#" class="join__form">
                     <label class="join__label">
                         <input type="email" name="join-email" class="join__input" placeholder="E-mail">
                     </label>
@@ -316,9 +277,49 @@
         </div>
 
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu__cross js-close-menu">
+            <svg class="menu__cross-icon" width="40" height="40"><use href="./images/icons.svg#cross"></use></svg>
+        </button>
+        <ul class="mob-nav">
+            <li class="mob-nav__item">
+                <a href="./index.html" class="mob-nav__subtitle">Студія</a>    
+            </li>
+            <li class="mob-nav__item">
+                <a href="./portfolio.html" class="mob-nav__subtitle  corrent">Портфоліо</a>
+            </li>
+            <li class="mob-nav__item">
+                <a href="" class="mob-nav__subtitle">Контакти</a>
+            </li>
+        </ul>
+
+        <ul class="mob-nav__auth">
+            <li class="mob-nav__auth-item">
+                <a href="tel:+380961111111" class="mob-nav--tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-nav__auth-item">
+                <a href="mailto:info@devstudio.com" class="mob-nav--email">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mob-nav--social">
+            <li class="link-social">Instagram</li>
+            <li class="link-social">Twitter</li>
+            <li class="link-social">Facebook</li>
+            <li class="link-social">LinkedIn</li>
+        </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
